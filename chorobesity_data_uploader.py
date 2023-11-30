@@ -30,7 +30,7 @@ if ".xlsx" not in filename:
     print(f"Invalid filename: \"{filename}\". Please ensure your file was saved with a .xlsx extension was obtained from the \"2023 County Health Rankings National Data\" download link located at https://www.countyhealthrankings.org/explore-health-rankings/rankings-data-documentation")
     exit(1)
 
-print(f"Running Step 1/1: Opening {filename}...")
+print(f"Running Step 1/3: Opening {filename}...")
 try:
     wb = op.load_workbook(filename)
     sheet1 = wb['Additional Measure Data']
